@@ -7,7 +7,14 @@ var playerMoney = 10;
 // You can also log multiple values at once like this
 console.log(playerName, playerAttack, playerHealth);
 
-var enemyName = "Roborto";
+var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
+console.log(enemyNames);
+console.log(enemyNames[0]);
+console.log(enemyNames[1]);
+console.log(enemyNames[2]);
+console.log(enemyNames[3]);
+console.log(enemyNames.length);
+
 var enemyHealth = 50;
 var enemyAttack = 12;
 
@@ -59,7 +66,7 @@ var fight = function() {
     }
     // if no (false), ask question again by running fight() again
     else {
-      fight();
+      // fight();
     }
     // if player did not chose 1 or 2 in prompt
   } else {
@@ -68,4 +75,4 @@ var fight = function() {
 };
 
 // run fight function to start game
-fight();
+// fight();
